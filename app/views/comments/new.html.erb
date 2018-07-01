@@ -1,0 +1,18 @@
+<div class="comments-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 users-new-container">
+        <h1 class="text-center text-white">Sign in</h1>
+        <%= form_for [@topic,@comment] do |f| %>
+          <div class="form-group">
+            <%= f.label :body, class: 'text-white' %>
+            <%= f.text_area :body, class: 'form-control' %>
+          </div>
+          <div class="">
+          <%= f.submit "コメントする", class: 'btn-block btn-black' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
